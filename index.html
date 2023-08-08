@@ -1,19 +1,102 @@
-<html>
-<head>
-    
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="baru belajar html" />
+    <style>
+      @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        src: url("fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      }
+
+      body {
+        font-family: "Roboto";
+        background-color: lightgray;
+        color: #2e333a;
+      }
+
+      .content {
+        background-color: White;
+        border: 5px;
+        border-radius: 20px;
+        padding: 2em;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 8vh;
+        position: relative;
+      }
+
+      .logo {
+        background-image: url("./images/Archimets_logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 5vw;
+        top: 5vh;
+        height: 10vh;
+        width: 10vw;
+        white-space: nowrap;
+      }
+      h1 {
+        background-color: green;
+        color: white;
+      }
+
+      h2 {
+        color: black;
+      }
+      p {
+        text-align: center;
+        color: green;
+      }
+    </style>
   </head>
   <body>
-    <h2>Platzhalter</h2>
-      <table>
-          <tr>
+    <div class="content">
+      <h2>
+        ArchiMETS - METS-Generator
+        <div class="logo" />
+      </h2>
+
+      <hr />
+      <br />
+      <span>
+        <h3>Features</h3>
+      </span>
+      <span>
+        <h3>Dokumentation</h3>
+      </span>
+      <span>
+        <h3>Download</h3>
+        <ul>
+          <table>
+            <tr>
               <th>
-                  Aktueller Download
+                Aktueller Link
               </th>
-          </tr>
-          <tr>
-              <td>https://github.com/ArchiMets/MetsGen/releases</td>
-              <td>Alpha-Dev - pre Release</td>
-          </tr>
-      </table>
+              <th style="text-align: right;">
+                Version
+              </th>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="https://github.com/ArchiMets/MetsGen/releases"
+                  target="_new"
+                  alt="Downloadlink"
+                  >Download</a
+                >
+              </td>
+              <td style="text-align: right;">Alpha-Dev - pre Release</td>
+            </tr>
+          </table>
+        </ul>
+      </span>
+    </div>
   </body>
-  </html>
+</html>
