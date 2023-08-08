@@ -1,2 +1,2 @@
-# MetsGen
-Repo für den METS-Generator
+# ArchiMETS
+Das neue Zuhause des ArchiMETS-Generators
